@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal Style</title>
+    <!-- internal-style 예시 : head tag 안에 style 태그 사용해서 규칙 정하기 -->
+    <style>
+      /* 내부 스타일 주석 */
+      .blue--text {
+        color: blue;
+      }
+      h1 {
+        color: blue;
+      }
+      .content {
+        border: 2px solid red;
+        background-color: yellow;
+        padding: 10px;
+      }
+      /* style 우선순위 테스트 */
+      * {
+        color: yellow !important;
+      }
+      a {
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="blue--text">별 보기</h1>
+    <p class="content">오늘도 별 보러 가고 싶습니다.</p>
+    <!-- style 우선순위 테스트 -->
+    <a href="#">네이버</a>
+  </body>
+</html>
