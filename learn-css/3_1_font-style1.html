@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style 1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      html {
+        /* font-family: serif, monospace; */
+        font-family: 'Nanum Gothic', serif;
+        font-size: 16px;
+      }
+      .title {
+        font-size: 28px;
+      }
+      .introduce {
+        font-size: 18px;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-variant {
+        font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .article {
+        font-size: 10px;
+      }
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: yellow;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">Steady-K</h2>
+    <p class="introduce">꾸준히 나아가려고 노력하는 Steady-K 입니다.</p>
+    <p class="introduce font-italic">
+      꾸준히 나아가려고 노력하는 Steady-K 입니다.
+    </p>
+
+    <p class="introduce font-weight-bold">
+      꾸준히 나아가려고 노력하는 Steady-K 입니다.
+    </p>
+
+    <p class="introduce font-weight-300">
+      꾸준히 나아가려고 노력하는 Steady-K 입니다.
+    </p>
+    <p class="introduce font-variant">HELLO, steady-k</p>
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">꾸준히 나아가려고 노력하는 Steady-K 입니다.</p>
+    <h2 class="subtitle-rem">rem</h2>
+    <p>꾸준히 나아가려고 노력하는 Steady-K 입니다.</p>
+    <h2>em</h2>
+    <div class="article">
+      <p class="subtitle-em">꾸준히 나아가려고 노력하는 Steady-K 입니다.</p>
+    </div>
+    <hr />
+    <!-- Viewport width -->
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <!-- viewport Height -->
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
+  </body>
+</html>
